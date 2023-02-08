@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="/css/style.css" rel="stylesheet" type="text/css">
 
 <head>
     <meta charset="UTF-8">
@@ -11,11 +11,11 @@
 
 <header>
     <nav id="headerlinks">
-        <button class="active"> <a href="index.html">Home</a> </button>
-        <button> <a href="aboutme.html">About Me</a> </button>
-        <button> <a href="faq.html">FAQ</a></button>
-        <button> <a href="dashboard.html">Dashboard</a></button>
-        <button> <a href="blog.html">Blogs</a></button>
+        <button class="active"> <a href="/">Home</a> </button>
+        <button> <a href="aboutme">About Me</a> </button>
+        <button> <a href="faq">FAQ</a></button>
+        <button> <a href="dashboard">Dashboard</a></button>
+        <button> <a href="blog">Blogs</a></button>
     </nav>
 
     <nav id="asidemenu" class="dropdown">
@@ -39,8 +39,8 @@
 
 
 <body>
-<img src="./recources/img/cameraenik.png" id="headerfoto">
-<a href="https://hz.nl" target="_blank"> <img src="recources/img/hzlogomainpage.png" id="fotolinks"> </a>
+<img src="/img/cameraenik.png" id="headerfoto">
+<a href="https://hz.nl" target="_blank"> <img src="/img/hzlogomainpage.png" id="fotolinks"> </a>
 <img src="https://acegif.com/wp-content/uploads/2021/4fh5wi/welcome-5.gif" id="welkomgif">
 <main>
     <div id="begintext">

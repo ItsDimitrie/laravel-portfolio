@@ -1,0 +1,461 @@
+body {
+  font-family: Roboto, sans-serif;
+  background-repeat: repeat;
+  background-color: black;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/21b5d8f9-81f1-4064-976e-0b95491b8b47/d7gg972-c1a1b22b-6941-48df-a030-b13ff24070eb.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIxYjVkOGY5LTgxZjEtNDA2NC05NzZlLTBiOTU0OTFiOGI0N1wvZDdnZzk3Mi1jMWExYjIyYi02OTQxLTQ4ZGYtYTAzMC1iMTNmZjI0MDcwZWIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ZjDhu6q2Rq7uDZ3965aRnK9lFJus0AWyhm6oQYb-qhs);
+  background-size: auto;
+  padding-top: 10px;
+}
+
+h1 {
+  padding-top: 50px;
+  margin-top: auto;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+h2 {
+  margin-top: 0px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+h3 {
+  margin-top: 0px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+h4 {
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+a {
+  color: white;
+}
+
+article {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgba(0, 0, 0, .30);
+  margin-top: 100px;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+}
+
+footer {
+  padding-top: 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* ----------------- Blogs Section --------------- */
+
+#myblogs {
+  text-align: center;
+}
+
+#myblogs a {
+  font-size: 20px;
+  color: #fdfdfd;
+}
+
+#myblogs button {
+  background-color: rgba(0, 0, 0, .55);
+  border: none;
+  box-shadow: 0 1px 16px 0 rgb(0, 0, 0), 0 6px 20px;
+  margin-top: 20px;
+  margin: 20px;
+}
+
+#studychoiseimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 1px 16px 0 rgb(0, 0, 0), 0 6px 20px;
+  width: 400px;
+}
+
+#programexperienceimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  box-shadow: 0 1px 16px 0 rgb(0, 0, 0), 0 6px 20px;
+}
+
+#feedbackimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  box-shadow: 0 1px 16px 0 rgb(0, 0, 0), 0 6px 20px;
+}
+
+#safariimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  box-shadow: 0 1px 16px 0 rgb(0, 0, 0), 0 6px 20px;
+
+}
+
+/* ----------------- FAQ Section ------------------------------------------------------- */
+
+
+#FAQ {
+  text-align: center;
+}
+
+#FAQ a {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+#FAQ button {
+  background-color: rgba(0, 0, 0, .55);
+  border: none;
+  box-shadow: 0 1px 16px 0 rgb(0, 0, 0), 0 6px 20px;
+  margin-top: 20px;
+  width: 500px;
+}
+
+#headerfoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 25px;
+  box-shadow: rgba(255, 253, 253, 0.45) 0px 25px 20px -20px;
+}
+
+/* ----------------- Welkom Section ---------------------------------------------------- */
+
+#flexbox{
+  display:flex;
+}
+
+#welkomsbericht {
+  display: block;
+  font-size: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1900px;
+  background-color: rgba(0, 0, 0, .30);
+}
+
+#welkomgif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height: 200px;
+  padding-top: 40px;
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 20px 30px -20px;
+}
+
+#welkomgif2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height: 200px;
+  padding-top: 5px;
+  box-shadow: rgba(255, 253, 253, .9) 0px 50px 170px -50px;
+}
+
+#footerfoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#bananaleft {
+  opacity: 20%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 5%;
+  padding-left: 400px;
+}
+
+#bananaright {
+  opacity: 20%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 5%;
+  padding-right: 400px;
+}
+
+#socials {
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#begintext {
+  margin-top:20px;
+  margin-left: auto;
+  margin-right: auto;
+  width:500px;
+  background-color: rgba(0, 0, 0, .30);
+}
+
+/* ----------------- Header Section ---------------------------------------------------- */
+
+
+#headerlinks {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#headerlinks a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#headerlinks a:hover {
+  background-color: rgb(0, 140, 255);
+}
+
+#headerlinks button {
+  background-color: white;
+  border: none;
+  box-shadow: 0 1px 16px 0 white, 0 6px 20px;
+}
+
+#headerlinks button:hover {
+  box-shadow: 0 1px 16px 0 white, 0 6px 20px;
+  background-color: rgb(0, 140, 255);
+}
+
+#headerlinks .active {
+  background-color: rgb(0, 140, 255);
+}
+
+/* ----------------- Camera Experience Pictures Section ---------------------------------------------------- */
+
+
+#fotolinks {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 5%;
+}
+
+#sportfoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+}
+
+#studiofoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+}
+
+#customers {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+#NEP {
+  padding-right: 40px;
+}
+
+/* ----------------- About Me Section ---------------------------------------------------- */
+
+
+#aboutmefoto {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 30px 90px 4px;
+}
+
+#aboutme p {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, .30);
+  text-align: center;
+}
+
+
+#aboutme ul {
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  background-color: rgba(0, 0, 0, .30);
+}
+
+#aboutmevideo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(255, 253, 253, 0.9) 0px 40px 200px -20px;
+}
+
+/* ----------------- Aside Menu and Dashboard Section ---------------------------------------------------- */
+
+#dashboardGeheel {
+  display: flex;
+}
+
+
+#asidemenu {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, .30);
+}
+
+ul {
+  list-style: none;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+
+}
+
+li {
+  display:block;
+  text-align: center;
+  padding-right:40px;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.9em;
+  width: 1500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.styled-table thead tr {
+  background-color: rgba(0, 0, 0, .30);
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+  padding: 12px 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+
+}
+
+.styled-table .gradegreen {
+  color: greenyellow;
+}
+
+.styled-table .gradered {
+  color: rgb(255, 0, 0);
+
+}
+
+
+.dropbtn {
+  background-color: rgba(255, 255, 255, .3);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: fixed;
+  display: inline-block;
+  top: 0px;
+  left: 0px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .30);
+}
+
+.dropdown-content a {
+  font-size: 25px;
+  color: white;
+  padding-left: 0px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.8)
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgba(0, 0, 0, .8);
+}
+
+/* ----------------- Progress Bar Section ---------------------------------------------------- */
+
+
+#progressbar {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+  background-color: rgba(255, 0, 0, 0.4);
+}

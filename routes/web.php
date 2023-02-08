@@ -3,6 +3,11 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\AboutMeController;
+use App\Http\Controllers\FaqController;
+use App\Http\Controllers\DashboardController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +40,12 @@ use App\Http\Controllers\WelcomeController;
 //});
 
 Route::get('/', [WelcomeController::class, 'show']);
+
+Route::get('/aboutme', [AboutMeController::class, 'show']);
+
+Route::get('/faq', [FaqController::class, 'show']);
+
+Route::get('/dashboard', [DashboardController::class, 'show']);
+
+
+
