@@ -6,6 +6,8 @@ use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\AboutMeController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PostsController;
+
 
 
 
@@ -46,6 +48,10 @@ Route::get('/aboutme', [AboutMeController::class, 'show']);
 Route::get('/faq', [FaqController::class, 'show']);
 
 Route::get('/dashboard', [DashboardController::class, 'show']);
+
+Route::get('/posts/{post}', [PostsController::class, 'show']);
+
+
 
 
 

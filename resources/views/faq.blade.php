@@ -42,6 +42,11 @@
 
 <div id="FAQ">
     <h1>Frequently Asked Questions</h1>
+    <ul>
+        @foreach($faqs as $faq)
+            <li>{{ $faq->question }}</li>
+        @endforeach
+    </ul>
     <button>
         <h1>How can you print a document from your laptop at HZ?</h1> <img src="/img/Printen.png"> <br> <a
             href="https://hzuniversity.topdesk.net/tas/public/ssp/content/detail/knowledgeitem?unid=78827361-9b3f-4261-9b41-940c9942f3da"
