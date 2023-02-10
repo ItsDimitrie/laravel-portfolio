@@ -53,7 +53,7 @@
             target="_blank">Find the answer here.</a>
     </button>
     <button>
-        <h1>How can you scan a document a send it to your laptop at HZ?</h1> <img src="/img/Scannen.png"><br> <a
+        <h1>How can you scan a document a send it to your laptop at HZ?</h1> <img src="/img/Scanner.png"><br> <a
             href="https://hzuniversity.topdesk.net/tas/public/ssp/content/detail/knowledgeitem?unid=d065a4e8-a56d-47dc-bd0f-fb9cdf78f20b"
             target="_blank">Find the answer here.</a>
     </button>
