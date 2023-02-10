@@ -7,6 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Grade extends Model
 {
+    /**
+     * @param $new_result
+     * @return void
+     */
     public function addResult($new_result)
     {
         if ($new_result > $this->best_grade)

@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Assignment extends Model
 {
+    /**
+     * @return void
+     */
     public function complete()
     {
         $this->completed = true;
