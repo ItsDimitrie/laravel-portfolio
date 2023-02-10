@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\Post;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
@@ -14,13 +15,10 @@ class PostsController extends Controller
      */
     public function show($slug): Factory|View|Application
     {
-
         $post = Post::where('slug', $slug)->firstOrFail();
-
 
         return view('post', [
             'post' => $post
         ]);
     }
 }
-
