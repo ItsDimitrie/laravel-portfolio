@@ -7,33 +7,57 @@ use Illuminate\Database\Eloquent\Model;
 
 class Grade extends Model
 {
+    use HasFactory;
     /**
      * @param $new_result
      * @return void
      */
-    public function addResult($new_result)
-    {
-        if ($new_result > $this->best_grade)
+public function addResult($new_result)
+{
+    if ($new_result > $this->best_grade) {
+        $this->best_grade = $new_result;
+
+        $this->save();
+        if ($this->best_grade >= $this->lowest_passing_grade)
         {
-            $this->best_grade = $new_result;
-
-            $this->save();
-
-            $model = $this->fresh();
-            if ($model->best_grade >= $model->lowest_passing_grade)
-            {
-                $model->passed_at = now();
-            }
-            else
-            {
-                $model->passed_at = null;
-            }
-
-            $model->save();
+            $this->passed_at = now();
         }
         else
         {
-            return;
+            $this->passed_at = null;
         }
+
+        $this->save();
+    }
+    else
+    {
+        return;
     }
 }
+}
+
+//public function addResult($new_result)
+//{
+//    if ($new_result > $this->best_grade) {
+//        $this->best_grade = $new_result;
+//
+//        $this->save();
+//
+//        $model = $this->fresh();
+//        if ($model->best_grade >= $model->lowest_passing_grade)
+//        {
+//            $model->passed_at = now();
+//        }
+//        else
+//        {
+//            $model->passed_at = null;
+//        }
+//
+//        $model->save();
+//    }
+//    else
+//    {
+//        return;
+//    }
+//}
+//}
