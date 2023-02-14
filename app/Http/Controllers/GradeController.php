@@ -45,7 +45,7 @@ class GradeController extends Controller
      * @param  \App\Models\grade  $grade
      * @return \Illuminate\Http\Response
      */
-    public function show(grade $grade)
+    public function show(Grade $grade)
     {
         //
     }

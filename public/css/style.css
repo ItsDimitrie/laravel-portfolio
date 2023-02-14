@@ -59,9 +59,6 @@ nav {
   text-align: center;
 }
 
-footer {
-  padding-top: 20px;
-}
 
 header {
   position: fixed;
@@ -158,10 +155,14 @@ header {
 
 #welkomsbericht {
   display: block;
-  font-size: 22px;
+  font-size: 18px;
   margin-left: auto;
   margin-right: auto;
-  width: 1900px;
+  width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   background-color: rgba(0, 0, 0, .30);
 }
 
@@ -459,3 +460,22 @@ li {
   text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
   background-color: rgba(255, 0, 0, 0.4);
 }
+
+/* ----------------- Footer Section ---------------------------------------------------- */
+
+
+footer{
+    position: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .30);
+    height: auto;
+    width: 100vw;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+
+

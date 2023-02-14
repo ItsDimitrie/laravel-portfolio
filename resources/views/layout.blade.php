@@ -11,9 +11,8 @@
         <button class="{{ Request::path() === 'blog' ? 'active' : '' }}"> <a href="blog">Blogs</a></button>
     </nav>
 
-
     <nav id="asidemenu" class="dropdown">
-        <button class="dropbtn">Handige Links!.</button>
+        <button class="dropbtn">Handige Links!</button>
         <div class="dropdown-content">
             <ul>
                 <li><a href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen"
@@ -30,14 +29,12 @@
             <img src="/img/cameraenik.png" id="headerfoto">
         </div>
     </nav>
-</header>
 
+</header>
 
 <body>
 @yield ('content');
 </body>
-
-
 
 <footer id="socials">
     <p>&copy; Dimitrie Lauer 2023</p>
@@ -47,6 +44,3 @@
     <a href="https://twitter.com/_Its_Dimah" target="_blank">Twitter</a>
 </footer>
 
-</body>
-
-</html>

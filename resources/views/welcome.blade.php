@@ -20,11 +20,13 @@
         <ul>
             <li>HTML</li>
             <li>CSS</li>
+            <li>PHP</li>
+            <li>JS</li>
         </ul>
     </div>
 
     <div id="flexbox">
-        <h3 id="welkomsbericht">This websie will be used as my personal website for all the HZ HBO-ICT Courses.
+        <h3 id="welkomsbericht">This website will be used as my personal website for all the HZ HBO-ICT Courses.
             <br>
             After being a cameraman for 4 years in the Media sector I have realised that altough the job is great and a lot of
             fun I don't want to do it

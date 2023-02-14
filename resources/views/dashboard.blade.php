@@ -50,7 +50,7 @@
                 data structures; operating systems; and client-server architecture.</td>
             <td>Written knowledge test.</td>
             <td>5</td>
-            <td class="gradered">N/A</td>
+            <td class="gradegreen">7,4</td>
         </tr>
 
         <tr class="active-row">
@@ -59,7 +59,7 @@
                 problem solving and algorithmic thinking.</td>
             <td>Case study exam.</td>
             <td>5</td>
-            <td class="gradered">N/A</td>
+            <td class="gradegreen">7,5</td>
         </tr>
 
         <tr class="active-row">
@@ -76,7 +76,7 @@
                 the given context.</td>
             <td>Portfolio</td>
             <td>1.25</td>
-            <td class="gradered">N/A</td>
+            <td class="gradegreen">Pass</td>
         </tr>
 
         <tr class="active-row">
@@ -98,7 +98,7 @@
                 First, we cover the theory then we move on to a practical assignment for a regional client.</td>
             <td>Presentation <br> <br> Case study exam </td>
             <td>10</td>
-            <td class="gradered">N/A</td>
+            <td class="gradegreen">9.5</td>
         </tr>
 
         <tr class="active-row">
@@ -174,7 +174,7 @@
 <div id="progressbar">
     <h4>Progress bar Study Year 1</h4>
     <p>EC's to be earned : 60</p>
-    <p>Currently earned : 2.5 EC's</p>
-    <progress style="width:50%" value="2.5" max="60"></progress>
+    <p>Currently earned : 12.5 EC's</p>
+    <progress style="width:50%" value="12.5" max="60"></progress>
 </div>
 
