@@ -69,6 +69,7 @@ header {
 /* ----------------- Blogs Section --------------- */
 
 #myblogs {
+    padding-top: 30px;
   text-align: center;
 }
 
@@ -117,6 +118,15 @@ header {
   box-shadow: 0 1px 16px 0 rgb(0, 0, 0), 0 6px 20px;
 
 }
+
+#blogsfoto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    box-shadow: 0 1px 16px 0 rgb(0, 0, 0), 0 6px 20px;
+}
+
 
 /* ----------------- FAQ Section ------------------------------------------------------- */
 
@@ -310,9 +320,11 @@ header {
 #aboutme p {
   margin-left: auto;
   margin-right: auto;
-  font-size: 20px;
+  font-size: 18px;
+    padding:20px;
   background-color: rgba(0, 0, 0, .30);
   text-align: center;
+    width:800px
 }
 
 
@@ -320,7 +332,8 @@ header {
   font-size: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: auto;
+  width: 800px;
+    padding: 20px;
   background-color: rgba(0, 0, 0, .30);
 }
 
@@ -363,7 +376,7 @@ li {
   margin-left: auto;
   margin-right: auto;
   font-size: 0.9em;
-  width: 1500px;
+  width: 1200px;
   box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 }
 

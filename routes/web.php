@@ -24,13 +24,21 @@ use App\Http\Controllers\PostsController;
 
 Route::get('/', [WelcomeController::class, 'show']);
 
-Route::get('/aboutme', [AboutMeController::class, 'show']);
+Route::get('aboutme', function () {
+
+    return view('aboutme', [
+        'articles' => App\Models\Article::latest()->get()
+    ]);
+});
 
 Route::get('/faq', [FaqController::class, 'show']);
 
 Route::get('/dashboard', [DashboardController::class, 'show']);
 
-Route::get('/posts/{post}', [PostsController::class, 'show']);
+Route::get('/blogs/{article}', [\App\Http\Controllers\ArticleController::class, 'show']);
+
+Route::get('/blogs/', [\App\Http\Controllers\ArticleController::class, 'index']);
+
 
 
 
