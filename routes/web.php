@@ -27,22 +27,21 @@ Route::get('/', [WelcomeController::class, 'show']);
 Route::get('/aboutme', [AboutMeController::class, 'show']);
 
 Route::get('/faq', [FaqController::class, 'index']);
-
-Route::get('/faq/create', [FaqController::class, 'create']);
-
 Route::post('/faq', [FaqController::class, 'store']);
-
+Route::get('/faq/create', [FaqController::class, 'create']);
 Route::get('/faq/{faq}', [FaqController::class, 'show']);
+Route::put('/faq/{faq}', [FaqController::class, 'update']);
+Route::get('/faq/{faq}/edit', [FaqController::class, 'edit']);
 
 Route::get('/dashboard', [DashboardController::class, 'show']);
 
 Route::get('/blogs', [ArticleController::class, 'index']);
-
 Route::post('/blogs', [ArticleController::class, 'store']);
-
 Route::get('/blogs/create', [ArticleController::class, 'create']);
-
 Route::get('/blogs/{article}', [ArticleController::class, 'show']);
+Route::put('/blogs/{article}', [ArticleController::class, 'update']);
+Route::get('/blogs/{article}/edit', [ArticleController::class, 'edit']);
+
 
 
 

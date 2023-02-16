@@ -38,17 +38,48 @@ class FaqController extends Controller
      */
     public function store()
     {
-        $faqs = new faq();
+        $faq = new faq();
 
-        $faqs->Question = request('Question');
+        $faq->Question = request('question');
 
-        $faqs->Answer = request('Answer');
+        $faq->Answer = request('answer');
 
-        $faqs->Link = request('Link');
+        $faq->Link = request('link');
 
-        $faqs->save();
+        $faq->save();
 
         return redirect('/faq');
+
+    }
+
+    /**
+     * @param $id
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function edit($id)
+    {
+        $faq = Faq::find($id);
+
+        return view('faqs.edit', ['faq' =>$faq]);
+    }
+
+    /**
+     * @param $id
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function update($id)
+    {
+        $faq = Faq::find($id);
+
+        $faq->Question = request('question');
+
+        $faq->Answer = request('answer');
+
+        $faq->Link = request('link');
+
+        $faq->save();
+
+        return redirect('/faq/' . $faq->id);
 
     }
 }
