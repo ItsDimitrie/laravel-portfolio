@@ -26,13 +26,25 @@ Route::get('/', [WelcomeController::class, 'show']);
 
 Route::get('/aboutme', [AboutMeController::class, 'show']);
 
-Route::get('/faq', [FaqController::class, 'show']);
+Route::get('/faq', [FaqController::class, 'index']);
+
+Route::get('/faq/create', [FaqController::class, 'create']);
+
+Route::post('/faq', [FaqController::class, 'store']);
+
+Route::get('/faq/{faq}', [FaqController::class, 'show']);
 
 Route::get('/dashboard', [DashboardController::class, 'show']);
 
+Route::get('/blogs', [ArticleController::class, 'index']);
+
+Route::post('/blogs', [ArticleController::class, 'store']);
+
+Route::get('/blogs/create', [ArticleController::class, 'create']);
+
 Route::get('/blogs/{article}', [ArticleController::class, 'show']);
 
-Route::get('/blogs/', [ArticleController::class, 'index']);
+
 
 
 

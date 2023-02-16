@@ -40,3 +40,4 @@
 <video
     src="https://d38unk532qwege.cloudfront.net/60f9620c46009777576fbe22/ad57ea86-ac3e-43f9-bc57-0bfb27846e9e-hls.m3u8"
     controls id="aboutmevideo">video not supported</video>
+@endsection

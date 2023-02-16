@@ -5,10 +5,10 @@
 <header>
     <nav id="headerlinks">
         <button class="{{ Request::path() === '/' ? 'active' : '' }}"> <a href="/">Home</a> </button>
-        <button class="{{ Request::path() === 'aboutme' ? 'active' : '' }}"> <a href="aboutme">About Me</a> </button>
-        <button class="{{ Request::path() === 'faq' ? 'active' : '' }}"> <a href="faq">FAQ</a></button>
-        <button class="{{ Request::path() === 'dashboard' ? 'active' : '' }}"> <a href="dashboard">Dashboard</a></button>
-        <button class="{{ Request::path() === 'blogs' ? 'active' : '' }}"> <a href="blogs">Blogs</a></button>
+        <button class="{{ Request::path() === 'aboutme' ? 'active' : '' }}"> <a href="/aboutme">About Me</a> </button>
+        <button class="{{ Request::path() === 'faq' ? 'active' : '' }}"> <a href="/faq">FAQ</a></button>
+        <button class="{{ Request::path() === 'dashboard' ? 'active' : '' }}"> <a href="/dashboard">Dashboard</a></button>
+        <button class="{{ Request::path() === 'blogs' ? 'active' : '' }}"> <a href="/blogs">Blogs</a></button>
     </nav>
 
     <nav id="asidemenu" class="dropdown">
