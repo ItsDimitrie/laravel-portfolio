@@ -52,7 +52,6 @@ class ArticleController extends Controller
         $article->save();
 
         return redirect('/blogs');
-
     }
 
     /**
@@ -83,7 +82,6 @@ class ArticleController extends Controller
         $article->save();
 
         return redirect('/blogs/' . $article->id);
-
     }
 
     /**

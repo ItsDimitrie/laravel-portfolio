@@ -49,7 +49,6 @@ class FaqController extends Controller
         $faq->save();
 
         return redirect('/faq');
-
     }
 
     /**
@@ -80,9 +79,12 @@ class FaqController extends Controller
         $faq->save();
 
         return redirect('/faq/' . $faq->id);
-
     }
 
+    /**
+     * @param $id
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
     public function destroy($id)
     {
         $faq = Faq::find($id);
