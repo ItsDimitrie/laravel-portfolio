@@ -34,9 +34,15 @@
 
         <div>
             <div>
-                <button id="blogbutton" type="submit">Submit</button>
+                <button id="blogbutton" type="submit">Edit</button>
             </div>
         </div>
+    </form>
+
+    <form method="POST" action="/blogs/{{ $article->id }}">
+        @csrf
+        @method('DELETE')
+        <button id="blogbutton" type="submit">Delete</button>
     </form>
 
 

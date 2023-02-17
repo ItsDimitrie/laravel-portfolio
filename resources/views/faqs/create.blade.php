@@ -9,10 +9,10 @@
         @csrf
 
         <div class="field">
-            <label class="label" for="Question">Question</label>
+            <label class="label" for="question">Question</label>
 
             <div class="control">
-                <input class="input" type="text" name="Question" id="Question">
+                <input class="input" type="text" name="question" id="question">
             </div>
         </div>
 
@@ -20,7 +20,7 @@
             <label class="label" for="answer">Answer</label>
 
             <div class="control">
-                <input class="textarea" name="Answer" id="Answer">
+                <input class="textarea" name="answer" id="answer">
             </div>
         </div>
 

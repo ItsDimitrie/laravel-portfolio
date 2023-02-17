@@ -40,11 +40,11 @@ class FaqController extends Controller
     {
         $faq = new faq();
 
-        $faq->Question = request('question');
+        $faq->question = request('question');
 
-        $faq->Answer = request('answer');
+        $faq->answer = request('answer');
 
-        $faq->Link = request('link');
+        $faq->link = request('link');
 
         $faq->save();
 
@@ -81,5 +81,14 @@ class FaqController extends Controller
 
         return redirect('/faq/' . $faq->id);
 
+    }
+
+    public function destroy($id)
+    {
+        $faq = Faq::find($id);
+
+        $faq->delete();
+
+        return redirect('/faq/');
     }
 }

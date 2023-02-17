@@ -85,4 +85,17 @@ class ArticleController extends Controller
         return redirect('/blogs/' . $article->id);
 
     }
+
+    /**
+     * @param $id
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function destroy($id)
+    {
+        $article = Article::find($id);
+
+        $article->delete();
+
+        return redirect('/blogs/');
+    }
 }
