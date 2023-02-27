@@ -5,14 +5,18 @@
         <h1>Hello there, create a post here!!</h1>
     </div>
 
-    <form method="POST" action="/blogs">
+    <form method="POST" action="{{route('blogs.index')}}">
         @csrf
-
         <div class="field">
             <label class="label" for="Title">Title</label>
 
             <div class="control">
-                <input class="input" type="text" name="title" id="title">
+                <input class="input" type="text" name="title" id="title" value="{{ old('title') }}">
+
+                @if ($errors->has('title'))
+                <p class="error">{{ $errors->first('title') }}</p>
+                @endif
+
             </div>
         </div>
 
@@ -20,7 +24,12 @@
             <label class="label" for="excerpt">Excerpt</label>
 
             <div class="control">
-                <input class="textarea" name="excerpt" id="excerpt">
+                <input class="textarea" name="excerpt" id="excerpt" value="{{ old('excerpt') }}">
+
+                @if ($errors->has('excerpt'))
+                    <p class="error">{{ $errors->first('excerpt') }}</p>
+                @endif
+
             </div>
         </div>
 
@@ -28,7 +37,12 @@
             <label class="label" for="body">Body</label>
 
             <div class="control">
-                <input class="textarea" name="body" id="body">
+                <input class="textarea" name="body" id="body" value="{{ old('body') }}">
+
+                @if ($errors->has('body'))
+                    <p class="error">{{ $errors->first('body') }}</p>
+                @endif
+
             </div>
         </div>
 

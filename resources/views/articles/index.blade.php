@@ -6,7 +6,7 @@
         <div id="myblogs">
             <div>
                 <h2>
-                    <a href = "/blogs/{{ $article->id }}">{{ $article->title }}</a>
+                    <a href = "{{ route('blogs.show', $article) }}">{{$article->title}}</a>
                 </h2>
             </div>
 

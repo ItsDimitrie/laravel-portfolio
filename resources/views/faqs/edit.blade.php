@@ -5,7 +5,7 @@
         <h1>Hello there, edit a post here!!</h1>
     </div>
 
-    <form method="POST" action="/faq/{{$faq->id}}">
+    <form method="POST" action="{{route('faq.show', $faq)}}">
         @csrf
         @method('PUT')
         <div class="field">

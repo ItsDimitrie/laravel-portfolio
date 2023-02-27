@@ -6,7 +6,7 @@
         <div id="myblogs">
             <div>
                 <h2>
-                    <a href = "/faq/{{ $faq->id }}">{{ $faq->question }}</a>
+                    <a href = "{{ route('faq.show', $faq) }}">{{$faq->question}}</a>
                 </h2>
             </div>
 

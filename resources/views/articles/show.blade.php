@@ -19,6 +19,7 @@
         <img src="/img/Choises.png"/>
     </p>
 
+
     <p>
         {{ $article->body }}
     </p>

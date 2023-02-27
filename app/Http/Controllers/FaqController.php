@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\Faq;
+use Illuminate\Http\Request;
 
 class FaqController extends Controller
 {
     /**
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
      */
     public function index()
     {
@@ -15,18 +18,11 @@ class FaqController extends Controller
 
         return view('faqs.index', ['faqs' => $faqs]);
     }
-    /**
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
-     */
-    public function show($id)
-    {
-        $faq = faq::find($id);
-
-        return view('faqs.show', ['faq' => $faq]);
-    }
 
     /**
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
      */
     public function create()
     {
@@ -34,63 +30,76 @@ class FaqController extends Controller
     }
 
     /**
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
      */
-    public function store()
+    public function store(Request $request)
     {
-        $faq = new faq();
+        Faq::create($this->validateFaq($request));
 
-        $faq->question = request('question');
-
-        $faq->answer = request('answer');
-
-        $faq->link = request('link');
-
-        $faq->save();
-
-        return redirect('/faq');
+        return view('faqs.show');
     }
 
     /**
-     * @param $id
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * Display the specified resource.
+     *
+     * @param  \App\Models\Faq  $faq
+     * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function show(Faq $faq)
     {
-        $faq = Faq::find($id);
+        return view('faqs.show', ['faq' => $faq]);
+    }
 
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Models\Faq  $faq
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(Faq $faq)
+    {
         return view('faqs.edit', ['faq' =>$faq]);
     }
 
     /**
-     * @param $id
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\Faq  $faq
+     * @return \Illuminate\Http\Response
      */
-    public function update($id)
+    public function update(Request $request, Faq $faq)
     {
-        $faq = Faq::find($id);
+        $faq->update($this->validateFaq($request));
 
-        $faq->Question = request('question');
-
-        $faq->Answer = request('answer');
-
-        $faq->Link = request('link');
-
-        $faq->save();
-
-        return redirect('/faq/' . $faq->id);
+        return redirect(route('faq.show', $faq));
     }
 
     /**
-     * @param $id
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Models\Faq  $faq
+     * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Faq $faq)
     {
-        $faq = Faq::find($id);
-
         $faq->delete();
 
-        return redirect('/faq/');
+        return redirect(route('faq.index'));
+    }
+
+    /**
+     * @return array
+     */
+    public function validateFaq($request): array
+    {
+        return $request->validate([
+            'question' => 'required',
+            'answer' => 'required',
+            'link' => 'required'
+        ]);
     }
 }
