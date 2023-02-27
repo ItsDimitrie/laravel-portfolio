@@ -7,7 +7,6 @@
 
     <form method="POST" action="{{route('faq.index')}}">
         @csrf
-
         <div class="field">
             <label class="label" for="question">Question</label>
 

@@ -39,7 +39,7 @@ class FaqController extends Controller
     {
         Faq::create($this->validateFaq($request));
 
-        return view('faqs.show');
+        return redirect(route('faq.index'));
     }
 
     /**
