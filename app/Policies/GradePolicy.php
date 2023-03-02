@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\Models\grade;
+use App\Models\GradeOld;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class GradePolicy
@@ -25,10 +25,10 @@ class GradePolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\grade  $grade
+     * @param  \App\Models\GradeOld  $grade
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, grade $grade)
+    public function view(User $user, GradeOld $grade)
     {
         //
     }
@@ -48,10 +48,10 @@ class GradePolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\grade  $grade
+     * @param  \App\Models\GradeOld  $grade
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, grade $grade)
+    public function update(User $user, GradeOld $grade)
     {
         //
     }
@@ -60,10 +60,10 @@ class GradePolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\grade  $grade
+     * @param  \App\Models\GradeOld  $grade
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, grade $grade)
+    public function delete(User $user, GradeOld $grade)
     {
         //
     }
@@ -72,10 +72,10 @@ class GradePolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\grade  $grade
+     * @param  \App\Models\GradeOld  $grade
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, grade $grade)
+    public function restore(User $user, GradeOld $grade)
     {
         //
     }
@@ -84,10 +84,10 @@ class GradePolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\grade  $grade
+     * @param  \App\Models\GradeOld  $grade
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, grade $grade)
+    public function forceDelete(User $user, GradeOld $grade)
     {
         //
     }
