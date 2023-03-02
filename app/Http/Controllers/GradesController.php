@@ -62,7 +62,6 @@ class GradesController extends Controller
     public function edit(Grades $grade)
     {
         return view('grades.edit', ['grades' =>$grade]);
-
     }
 
     /**
