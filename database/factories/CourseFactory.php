@@ -19,7 +19,7 @@ class CourseFactory extends Factory
         return [
             'cu_code' => fake()->numberBetween(0, 99999),
             'name' => fake()->firstNameMale(),
-            'credits' => fake()->numberBetween(0,10)
+            'credits' => fake()->numberBetween(0, 10)
         ];
     }
 }

@@ -20,7 +20,7 @@ class GradesFactory extends Factory
         return [
             'course_id' => Course::factory(\app\models\course::class),
             'test_name' => fake()->company(),
-            'weighing_factor' => fake()->numberBetween(0,10),
+            'weighing_factor' => fake()->numberBetween(0, 10),
             'best_grade' => fake()->numberBetween(0, 10)
         ];
     }
