@@ -19,6 +19,9 @@
         <img src="/img/Choises.png"/>
     </p>
 
+    <p>
+        {{ $article->excerpt }}
+    </p>
 
     <p>
         {{ $article->body }}

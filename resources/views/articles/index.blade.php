@@ -12,5 +12,8 @@
 
             <img id="blogsfoto" src="/img/hzlogomainpage.png" alt="">
 
+            <button><a href="/blogs/{{$article->id}}" class="button is-primary">Read more...</a></button>
+            <button><a href="/blogs/{{$article->id}}/edit" class="button is-primary">Edit Article...</a></button>
+
         </div>
     @endforeach

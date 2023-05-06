@@ -69,13 +69,13 @@ header {
 /* ----------------- Blogs Section --------------- */
 
 #myblogs {
-    padding-top: 30px;
+  padding-top: 30px;
   text-align: center;
 }
 
 #myblogs a {
   font-size: 20px;
-  color: #fdfdfd;
+  color: #fff;
 }
 
 #myblogs button {
