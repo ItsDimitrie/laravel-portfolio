@@ -8,6 +8,8 @@ use App\Http\Controllers\FaqController;
 use App\Http\Controllers\DashboardController;
 use App\http\controllers\ArticleController;
 use App\http\controllers\GradesController;
+use App\http\controllers\PictureOfTheDayController;
+
 
 
 
@@ -24,6 +26,8 @@ use App\http\controllers\GradesController;
 */
 
 Route::get('/', [WelcomeController::class, 'show']);
+
+Route::get('/potd', [PictureOfTheDayController::class, 'show']);
 
 Route::get('/aboutme', [AboutMeController::class, 'show']);
 

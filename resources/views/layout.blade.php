@@ -2,6 +2,7 @@
 <html lang="en">
 <link href="/css/style.css" rel="stylesheet" type="text/css">
 
+
 <header>
     <nav id="headerlinks">
         <button class="{{ Request::path() === '/' ? 'active' : '' }}"> <a href="/">Home</a> </button>
@@ -9,6 +10,7 @@
         <button class="{{ Request::path() === 'faq' ? 'active' : '' }}"> <a href="/faq">FAQ</a></button>
         <button class="{{ Request::path() === 'dashboard' ? 'active' : '' }}"> <a href="/dashboard">Dashboard</a></button>
         <button class="{{ Request::path() === 'blogs' ? 'active' : '' }}"> <a href="/blogs">Blogs</a></button>
+        <button class="{{ Request::path() === 'potd' ? 'active' : '' }}"> <a href="/potd">POTD</a></button>
     </nav>
 
     <nav id="asidemenu" class="dropdown">
