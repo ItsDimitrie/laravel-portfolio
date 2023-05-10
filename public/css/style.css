@@ -556,3 +556,30 @@ footer{
       padding-top: 20px;
       padding-bottom: 20px;
 }
+
+/* ----------------- Errors ---------------------------------------------------- */
+
+#error-message {
+        border-radius: 4px;
+        max-width: 800px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        text-align: center;
+      }
+
+#error-button {
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+}
+
+#aarde-gif {
+    padding-left: 525px;
+}

@@ -39,7 +39,9 @@ Route::resource('/grades', GradesController::class);
 
 Route::resource('/blogs', ArticleController::class);
 
-
+Route::get('/test-500', function () {
+    throw new \Exception("Er is iets misgegaan!");
+});
 
 
 
