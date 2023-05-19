@@ -83,7 +83,8 @@ class ArticleController extends Controller
         return request()->validate([
             'title' => 'required',
             'excerpt' => 'required',
-            'body' => 'required'
+            'body' => 'required',
+            'img_url' => 'required'
         ]);
     }
 }

@@ -21,6 +21,19 @@
         </div>
 
         <div class="field">
+            <label class="label" for="img_url">Afbeelding URL</label>
+
+            <div class="control">
+                <input class="textarea" name="img_url" id="img_url" value="{{ old('img_url') }}">
+
+                @if ($errors->has('body'))
+                    <p class="error">{{ $errors->first('body') }}</p>
+                @endif
+
+            </div>
+        </div>
+
+        <div class="field">
             <label class="label" for="excerpt">Excerpt</label>
 
             <div class="control">

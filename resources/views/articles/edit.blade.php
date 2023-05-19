@@ -25,6 +25,14 @@
         </div>
 
         <div class="field">
+            <label class="label" for="img_url">Afbeelding URL</label>
+
+            <div class="control">
+                <textarea class="textarea" name="img_url" id="img_url">{{$article->img_url}}</textarea>
+            </div>
+        </div>
+
+        <div class="field">
             <label class="label" for="body">Body</label>
 
             <div class="control">
