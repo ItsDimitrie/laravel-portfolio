@@ -10,14 +10,12 @@
     <script type="text/javascript" src="/potd.js"></script>
 </head>
 
-
-<button id="showImage" onclick="showImage();">Show Image</button>
+<body onload="showImage();">
 
 <h1>NASA Astronomy Picture Of The Day</h1>
 <h2 id="title"></h2>
-<h3>Date: <input type="date" id="Date_Picker" value="01-02-2023" min="1995-06-01" max="2023-12-31"></h3>
+<h3>Date: <input type="date" id="Date_Picker" min="1995-06-01" max="2023-12-31" onchange="showImage();"></h3>
 <img id="pic" src="" alt="NASA Picture Of The Day">
 <h3 id="explanation"></h3>
 
-
-
+<button id="showImage" onclick="showImage();">Show Image</button>
