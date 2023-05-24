@@ -1,8 +1,6 @@
 
 async function showImage() {
   const chosenDate = document.getElementById("Date_Picker").value;
-  console.log(chosenDate);
-
   const url = `https://api.nasa.gov/planetary/apod?api_key=2w8wVIHx6Aba691EOmcwBBUmVQ1auLZmOHk6FsjL&date=${chosenDate}`;
 
   try {
